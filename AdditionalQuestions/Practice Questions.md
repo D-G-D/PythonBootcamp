@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This file contains additional questions to practice the Python syntax.
+This file contains additional questions to practice the Python syntax. You have seen the necessary syntax if you have learnt up to the technical note in the heading (included).
 
-## Questions
+## Questions [PY3]
 
 1. Write a Python function which, a date in string format 'YYYY-MM-DD' (Example: February 8th, 2024 is 2024-02-08) checks that the month part of the string is correct. An example of an incorrect month would be 2024-13-08, as there is no month 13.
 
