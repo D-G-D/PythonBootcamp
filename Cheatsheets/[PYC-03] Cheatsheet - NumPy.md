@@ -98,6 +98,8 @@
 
 * `np.min()`: the same as the method `.min()`.
 
+* `np.ones(shape)`: creates an array with dimensions given by `shape`, filled with ones.
+  
 * `np.reshape()`: the same as the method `.reshape()`.
 
 * `np.round()`: the same as the method `.round()`.
@@ -113,3 +115,5 @@
 * `np.unique(arr, return_counts=False)`: returns the sorted (ascending) unique terms of the array specified by the parameter `ar`. With the keyword argument `returns_counts=True` (not the default), it returns also an array containing the number of occurrences of every unique value. It has other parameters whose default you will never change. 
 
 * `np.vectorize()`: vectorizes a function, so it can take vector-like objects, such as lists or 1D arrays, as arguments. Irrespective of the type of those objects, a vectorized function always returns a NumPy array.
+  
+* `np.zeros(shape)`: creates an array with dimensions given by `shape`, filled with zeros.
