@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**TripAdvisor** is a US travel and restaurant website company that shows hotel and restaurant reviews, accommodation bookings and other travel-related content. Headquartered in Needham, Massachusetts, TripAdvisor is the largest "social travel website" in the world, with about 315 million reviewers (active and inactive) and about 500 million reviews of hotels, restaurants, attractions and other travel-related businesses. TripAdvisor was an early adopter of **user-generated content**. The website services are free to users, who provide most of the content, and the website is supported by a hotel booking facility and an advertising business model.
+**TripAdvisor** is a US travel and restaurant website company that shows hotel and restaurant reviews, accommodation bookings and other travel-related content. Headquartered in Needham, Massachusetts. TripAdvisor is the largest "social travel website" in the world, with about 315 million reviewers (active and inactive) and about 500 million reviews of hotels, restaurants, attractions and other travel-related businesses. TripAdvisor was an early adopter of **user-generated content**. The website services are free to users, who provide most of the content, and the website is supported by a hotel booking facility and an advertising business model.
 
 ## Part 1: Credit card checks
 
-Customers of TripAdvisor (reviewers, restaurants, etc.) often need to share payment details with them. TripAdvisor wants you to implement several functions to test that the information provided corresponds to valid payment information. Provide the code and a 
+Customers of TripAdvisor (reviewers, restaurants, etc.) often need to share payment details with them. TripAdvisor wants you to implement several functions to test that the information provided corresponds to valid payment information. When answering the following questions, provide the code and the execution of any tests you have done.
 
 **Question 1:** Create a function `obtain_card_number` that asks the Python user to provide a credit card number, and then returns it. 
 
