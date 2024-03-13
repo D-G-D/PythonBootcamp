@@ -60,7 +60,7 @@ In [1]: import pandas as pd
 In this example, we use a remote data source. In Pandas, remote source files work the same as local files, the only difference being in the path. The source files for this course can be found in the GitHub repository of this course. The path for these files can be inputted as follows.
 
 ```
-In [2]: path = 'https://raw.githubusercontent.com/cinnData/PythonBootcamp/main/Data/'
+In [2]: path = 'https://raw.githubusercontent.com/D-G-D/PythonBootcamp/main/Data/'
 ```
 
 To import the data to a Pandas data frame we use the function `read_csv()`. In this example, we use the parameter `index_col` to specify the column `listing_id` as the index. 
