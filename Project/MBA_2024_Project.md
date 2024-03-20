@@ -16,10 +16,10 @@ Customers of TripAdvisor (reviewers, restaurants, etc.) often need to share paym
 
 The last digit of a credit card number is a *check digit*, meaning that it's calculated from the rest using a formula (https://en.wikipedia.org/wiki/Luhn_algorithm). This means that if any digit is wrongly entered, the *check digit* won't match and the number is wrong. Here are the steps to calculate the check digit:
 
-1. Remove the check digit from the card number. Example: 12346 -> 1234
-2. Take the remaining 15 digits. Starting from the rightmost digit, and moving left, every second digit is multiplied by two. Example: 1234 -> 4, 3\*2, 2, 1\*2 
-3. Sum the digits (or their doubles), and name it `s`. Example: 1234 -> 4, 3\*2, 2, 1\*2 = 14; s=14
-4. Calculate (10 - (s mod 10) ) mod 10. Remember the modulo function is calculated using the %, so 's mod 10' is `s%10`. Example: (10- (14 mod 10)) mod 10 = (10-4) mod 10 = 6
+1. Remove the check digit from the card number. Example: 13573 -> 1357
+2. Take the remaining digits. Starting from the rightmost digit, and moving left, every second digit is multiplied by two. Example: 1357 -> 7\*2, 5, 3\*2, 1 -> 14, 5, 6, 1
+3. Sum the digits (or the digits of their doubles), and name it `s`. Example: 14, 5, 6, 1 -> 1+4+5+6+1 = 17
+4. Calculate (10 - (s mod 10) ) mod 10. Remember the modulo function is calculated using the %, so 's mod 10' is `s%10`. Example: (10- (17 mod 10)) mod 10 = (10-7) mod 10 = 3
 
 If calculation result from step 4 matches the last digit of the cart, it passes the check.
 
@@ -30,7 +30,7 @@ If calculation result from step 4 matches the last digit of the cart, it passes 
 - Number 1: 1234567890A23456 (Wrong Format)
 - Number 2: 123456789013456  (Wrong Format)
 - Number 3: 1234567890123456 (Right Format, Wrong Check Digit)
-- Number 4: 1234567890123454 (Right Format, Right Check Digit)
+- Number 4: 1234567890123452 (Right Format, Right Check Digit)
 
 When testing the numbers, if your function yields an error try modifying the code to avoid it. If you cannot, leave it with an error output and explain why it happens.
 
